@@ -1,7 +1,4 @@
-﻿<?php
-	include('Templates/arrays.php');
-?>
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
