@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app = "fyp">
   <head>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="js/home.controller.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript"src="js/home.controller.js"></script>
   </head>
-    <body ng-controller="myCtrl">
+    <body ng-controller="homeCtrl">
       <div class="navigation">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <a class="navbar-brand" href="#"> <img class="logo" src="" height="40"> LOGO</a>
@@ -32,6 +32,7 @@
         </nav>
       </div>
 
-      <h1 ng-repeat="x in conditions">{{x}}</h1>
+      <h4 ng-repeat="conditions">{{conditions}}</h4>
       
     </body>   
+    </html>

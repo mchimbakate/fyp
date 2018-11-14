@@ -1,7 +1,6 @@
-var app = angular.module("myApp", []);
-app.controller("myCtrl", function($scope) {
-
-$scope.conditions = [
+var app = angular.module('fyp',[]);
+app.controller('homeCtrl',function($scope){
+    $scope.conditions =[
     'Acute coronary syndromes',
     'Acute coronary syndromes, hyperglycaemia',
     'Acute heart failure',
@@ -507,6 +506,7 @@ $scope.conditions = [
     'Venous thromboembolism',
     'Violence and aggression',
     'Vitamin D: supplement use in specific population groups',
-    'Vomiting and diarrhoea in children']
+    'Vomiting and diarrhoea in children'
+];
 
 });
