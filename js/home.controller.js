@@ -1,6 +1,6 @@
 var app = angular.module('fyp',[]);
-app.controller('homeCtrl',function($scope){
-    $scope.conditions =[
+app.controller('homeCtrl',['$scope','$filter',function(scope,filter){
+    scope.conditions =[
     'Acute coronary syndromes',
     'Acute coronary syndromes, hyperglycaemia',
     'Acute heart failure',
@@ -509,4 +509,5 @@ app.controller('homeCtrl',function($scope){
     'Vomiting and diarrhoea in children'
 ];
 
-});
+
+}]);
