@@ -32,32 +32,28 @@
           </div>
         </nav>
       </div>
-
-      <!-- <h4 ng-repeat="x in conditions">{{conditions}}</h4> -->
+      <div id = "conditions">
       <table st-table="rowCollection" class="table table-striped">
         <thead>
         <tr>
           <th>Condition</th>
         </tr>
         <tr>
-          <!-- <th colspan="3">
-            <input st-search placeholder="Search for Condition" class="input-sm form-control" type="search"/>
-          </th> -->
         </tr>
         </thead>
         <tbody>
         <tr ng-repeat="condition in conditions">
-          <td><a style="text-decoration:none" href ="https://pathways.nice.org.uk/pathways/{{condition}}">{{condition}}</a></td>
+          <td><a style="text-decoration:none" href ="{{condition}}.html">{{condition}}</a></td>
         </tr>
         </tbody>
         <tfoot>
           <tr>
             <td colspan="1" class="text-center">
-              <div st-pagination="" st-items-by-page="itemsByPage" st-displayed-pages="7"></div>
+              <div  st-items-by-page="itemsByPage" st-pagination="" st-displayed-pages="7"></div>
             </td>
           </tr>
-        </tfoot>
+          </tfoot>
       </table>
-      
+      </div>
     </body>   
     </html>

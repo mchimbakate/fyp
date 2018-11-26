@@ -508,6 +508,13 @@ app.controller('homeCtrl',['$scope','$filter',function(scope,filter){
     'Vitamin D: supplement use in specific population groups',
     'Vomiting and diarrhoea in children'
 ];
-
-
+        scope.itemsByPage=15;
 }]);
+
+function readXML(){
+    var xml= new XMLHttpRequest();
+    xml.open('GET','asthma.xml',false);
+    xml.send();
+    var xmlData = xml.responseText;
+    document.write(xmlData);
+  }

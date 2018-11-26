@@ -1,0 +1,280 @@
+{
+    "path": {
+       "link": [
+          {
+             "_rel": "self",
+             "_uri": "/pathways/asthma/asthma-overview",
+             "_title": "Asthma overview",
+             "_type": "text/html"
+          },
+          {
+             "_rel": "self",
+             "_uri": "/pathways/asthma/asthma-overview.xml",
+             "_title": "Asthma overview",
+             "_shorturi": "/pathways/asthma/asthma-overview.xml",
+             "_type": "application/vnd.nice.path+xml"
+          },
+          {
+             "_rel": "/rels/view-thumbnail",
+             "_uri": "/pathways/asthma/asthma-overview/thumb.xml",
+             "_title": "Asthma overview",
+             "_shorturi": "/pathways/asthma/asthma-overview/thumb.xml",
+             "_type": "application/vnd.nice.path-thumbnail+xml"
+          },
+          {
+             "_rel": "pathway",
+             "_uri": "/pathways/asthma",
+             "_title": "Asthma",
+             "_slug": "pathways/asthma",
+             "_type": "text/html"
+          },
+          {
+             "_rel": "self",
+             "_uri": "/pathways/asthma/asthma-overview.pdf",
+             "_title": "Asthma overview",
+             "_type": "application/pdf"
+          }
+       ],
+       "nodes": {
+          "node": [
+             {
+                "title": {
+                   "__cdata": "\nPerson with suspected asthma\n"
+                },
+                "shortcontent": {
+                   "__cdata": "\n<div id=\"paths-asthma-overview-nodes-person-with-suspected-asthma-shortcontent\" class=\"fragment shortcontent \"><div class=\"p\">Person with suspected asthma</div></div>\n"
+                },
+                "geometry": {
+                   "_width": "176",
+                   "_height": "40",
+                   "_left": "106",
+                   "_top": "1"
+                },
+                "link": [
+                   {
+                      "_rel": "/rels/connection/arrow",
+                      "_uri": "#nodes-assessment-and-diagnosis-in-person-under-17",
+                      "_label": "",
+                      "_sourceside": "bottom",
+                      "_targetside": "top"
+                   },
+                   {
+                      "_rel": "/rels/connection/arrow",
+                      "_uri": "#nodes-assessment-and-diagnosis-in-person-aged-17-or-over",
+                      "_label": "",
+                      "_sourceside": "bottom",
+                      "_targetside": "top"
+                   },
+                   {
+                      "_rel": "/rels/connection/arrow",
+                      "_uri": "#nodes-diagnostic-hubs",
+                      "_label": "",
+                      "_sourceside": "bottom",
+                      "_targetside": "top"
+                   },
+                   {
+                      "_rel": "/rels/connection/arrow",
+                      "_uri": "#nodes-patient-experience-in-adult-nhs-services",
+                      "_label": "",
+                      "_sourceside": "bottom",
+                      "_targetside": "top"
+                   }
+                ],
+                "_id": "nodes-person-with-suspected-asthma",
+                "_type": "landing",
+                "_nodeorder": "1"
+             },
+             {
+                "title": {
+                   "__cdata": "\nAssessment and diagnosis in person under 17\n"
+                },
+                "shortcontent": {
+                   "__cdata": "\n<div id=\"paths-asthma-overview-nodes-assessment-and-diagnosis-in-person-under-17-shortcontent\" class=\"fragment shortcontent \"><div class=\"p\">Assessment and diagnosis in person under 17</div></div>\n"
+                },
+                "link": [
+                   {
+                      "_rel": "/rels/view-path",
+                      "_uri": "/pathways/asthma/assessing-and-diagnosing-asthma-in-under-17s",
+                      "_title": "Assessing and diagnosing asthma in under 17s",
+                      "_type": "text/html"
+                   },
+                   {
+                      "_rel": "/rels/view-path",
+                      "_uri": "/pathways/asthma/assessing-and-diagnosing-asthma-in-under-17s.xml",
+                      "_title": "Assessing and diagnosing asthma in under 17s",
+                      "_shorturi": "/pathways/asthma/assessing-and-diagnosing-asthma-in-under-17s.xml",
+                      "_type": "application/vnd.nice.path+xml"
+                   },
+                   {
+                      "_rel": "/rels/connection/arrow",
+                      "_uri": "#nodes-management",
+                      "_label": "",
+                      "_sourceside": "bottom",
+                      "_targetside": "top"
+                   }
+                ],
+                "geometry": {
+                   "_width": "176",
+                   "_height": "40",
+                   "_left": "1",
+                   "_top": "72"
+                },
+                "_id": "nodes-assessment-and-diagnosis-in-person-under-17",
+                "_type": "offmapreference",
+                "_nodeorder": "2"
+             },
+             {
+                "title": {
+                   "__cdata": "\nAssessment and diagnosis in person aged 17 or over\n"
+                },
+                "shortcontent": {
+                   "__cdata": "\n<div id=\"paths-asthma-overview-nodes-assessment-and-diagnosis-in-person-aged-17-or-over-shortcontent\" class=\"fragment shortcontent \"><div class=\"p\">Assessment and diagnosis in person aged 17 or over</div></div>\n"
+                },
+                "link": [
+                   {
+                      "_rel": "/rels/view-path",
+                      "_uri": "/pathways/asthma/assessing-and-diagnosing-asthma-in-people-aged-17-and-over",
+                      "_title": "Assessing and diagnosing asthma in people aged 17 and over",
+                      "_type": "text/html"
+                   },
+                   {
+                      "_rel": "/rels/view-path",
+                      "_uri": "/pathways/asthma/assessing-and-diagnosing-asthma-in-people-aged-17-and-over.xml",
+                      "_title": "Assessing and diagnosing asthma in people aged 17 and over",
+                      "_shorturi": "/pathways/asthma/assessing-and-diagnosing-asthma-in-people-aged-17-and-over.xml",
+                      "_type": "application/vnd.nice.path+xml"
+                   },
+                   {
+                      "_rel": "/rels/connection/arrow",
+                      "_uri": "#nodes-management",
+                      "_label": "",
+                      "_sourceside": "bottom",
+                      "_targetside": "top"
+                   }
+                ],
+                "geometry": {
+                   "_width": "176",
+                   "_height": "40",
+                   "_left": "211",
+                   "_top": "73"
+                },
+                "_id": "nodes-assessment-and-diagnosis-in-person-aged-17-or-over",
+                "_type": "offmapreference",
+                "_nodeorder": "3"
+             },
+             {
+                "title": {
+                   "__cdata": "\nManagement\n"
+                },
+                "shortcontent": {
+                   "__cdata": "\n<div id=\"paths-asthma-overview-nodes-management-shortcontent\" class=\"fragment shortcontent \"><div class=\"p\">Management</div></div>\n"
+                },
+                "link": [
+                   {
+                      "_rel": "/rels/view-path",
+                      "_uri": "/pathways/asthma/managing-asthma",
+                      "_title": "Managing asthma",
+                      "_type": "text/html"
+                   },
+                   {
+                      "_rel": "/rels/view-path",
+                      "_uri": "/pathways/asthma/managing-asthma.xml",
+                      "_title": "Managing asthma",
+                      "_shorturi": "/pathways/asthma/managing-asthma.xml",
+                      "_type": "application/vnd.nice.path+xml"
+                   },
+                   {
+                      "_rel": "/rels/connection/arrow",
+                      "_uri": "#nodes-monitor-and-review",
+                      "_label": "",
+                      "_sourceside": "bottom",
+                      "_targetside": "top"
+                   }
+                ],
+                "geometry": {
+                   "_width": "176",
+                   "_height": "25",
+                   "_left": "106",
+                   "_top": "173"
+                },
+                "_id": "nodes-management",
+                "_type": "offmapreference",
+                "_nodeorder": "4"
+             },
+             {
+                "title": {
+                   "__cdata": "\nMonitor and review\n"
+                },
+                "shortcontent": {
+                   "__cdata": "\n<div id=\"paths-asthma-overview-nodes-monitor-and-review-shortcontent\" class=\"fragment shortcontent \"><div class=\"p\">Monitor and review</div></div>\n"
+                },
+                "fullcontent": {
+                   "__cdata": "\n<div id=\"paths-asthma-overview-nodes-monitor-and-review-fullcontent\" class=\"fragment fullcontent \"><h1>Monitor and review</h1><div class=\"p\">Monitor asthma control at every review. If control is suboptimal: </div><ul><li> confirm the person&#39;s adherence to prescribed treatment in line with NICE&#39;s recommendations on <a rel=\"/rels/view-fragment/pathway\" href=\"/pathways/medicines-optimisation/medicines-optimisation-overview#content=view-node%3Anodes-supporting-adherence\" class=\"fragment pathway\">supporting adherence</a></li><li> review the person&#39;s inhaler technique</li><li> review if treatment needs to be changed</li><li> ask about <a rel=\"/rels/view-fragment/pathway\" href=\"/pathways/asthma/assessing-and-diagnosing-asthma-in-people-aged-17-and-over#content=view-node%3Anodes-occupational-asthma\" class=\"fragment pathway\">occupational asthma</a> and/or other triggers, if relevant. </li></ul><div class=\"p\">Consider using a validated questionnaire (for example, the Asthma Control Questionnaire or Asthma Control Test) to monitor asthma control in adults (aged <span class=\"no-break\">17 and over</span>).</div><div class=\"p\">Monitor asthma control at each review in adults, young people and children aged 5 and over using either spirometry or peak flow variability testing.</div><div class=\"p\">Do not routinely use <a rel=\"/rels/view-fragment/glossary\" href=\"#glossary-feno\" class=\"fragment glossary\">FeNO</a> to monitor asthma control.</div><div class=\"p\">Do not use challenge testing to monitor asthma control.</div><div class=\"p\">Observe and give advice on the person&#39;s inhaler technique: </div><ul><li> at every consultation relating to an asthma attack, in all care settings</li><li> when there is deterioration in asthma control</li><li> when the inhaler device is changed</li><li> at every annual review</li><li> if the person asks for it to be checked.</li></ul><div class=\"p\">See NICE&#39;s recommendations on <a rel=\"/rels/view-fragment/pathway\" href=\"/pathways/transition-from-childrens-to-adults-services\" class=\"fragment pathway\"><span>transition from children&#39;s to adults&#39; services</span></a>.</div><h2>Fractional exhaled nitric oxide measurement</h2><div class=\"p\">The following recommendation is an extract from NICE diagnostics guidance on <a href=\"http://www.nice.org.uk/guidance/DG12\" title=\"View DG12 at NICE website\" target=\"_blank\">measuring fractional exhaled nitric oxide concentration in asthma: NIOX MINO, NIOX VERO and NObreath</a>.</div><div class=\"p\">FeNO measurement is recommended as an option to support asthma management (in conjunction with the <a href=\"http://www.sign.ac.uk/sign-153-british-guideline-on-the-management-of-asthma.html\" title=\"View guideline\" target=\"_blank\">British guideline on the management of asthma</a> 2012) in people who are symptomatic despite using inhaled corticosteroids.</div><div id=\"paths-asthma-overview-nodes-monitor-and-review-fullcontent-qualitystatementreferences\" class=\"fragment qualitystatementreference \"><h1>Quality standards</h1><div class=\"p\">The following quality statements are relevant to this part of the interactive flowchart.</div><div class=\"p\"><a rel=\"/rels/view-fragment/quality-statement\" href=\"#quality-statements-monitoring-asthma-control\" class=\"fragment quality-statement\"><span><span>3</span><span>Monitoring asthma control</span></span></a></div><div class=\"p\"><a rel=\"/rels/view-fragment/quality-statement\" href=\"#quality-statements-follow-up-by-general-practice-after-emergency-care\" class=\"fragment quality-statement\"><span><span>4</span><span>Follow-up by general practice after emergency care</span></span></a></div></div><div id=\"paths-asthma-overview-nodes-monitor-and-review-fullcontent-sourceguidancereferences\" class=\"fragment sourceguidancereference \"><h1>Sources</h1><div class=\"p\">The NICE guidance that was used to create this part of the interactive flowchart. </div><div class=\"p\"><a rel=\"/rels/view-fragment/source-guidance\" href=\"#source-guidance-ng80\" class=\"fragment source-guidance\"><span>NG80</span></a></div><div class=\"p\"><a rel=\"/rels/view-fragment/source-guidance\" href=\"#source-guidance-dg12\" class=\"fragment source-guidance\"><span>DG12</span></a></div></div></div>\n"
+                },
+                "geometry": {
+                   "_width": "176",
+                   "_height": "25",
+                   "_left": "106",
+                   "_top": "250"
+                },
+                "_id": "nodes-monitor-and-review",
+                "_type": "context",
+                "_nodeorder": "5"
+             },
+             {
+                "title": {
+                   "__cdata": "\nDiagnostic hubs\n"
+                },
+                "shortcontent": {
+                   "__cdata": "\n<div id=\"paths-asthma-overview-nodes-diagnostic-hubs-shortcontent\" class=\"fragment shortcontent \"><div class=\"p\">Diagnostic hubs</div></div>\n"
+                },
+                "fullcontent": {
+                   "__cdata": "\n<div id=\"paths-asthma-overview-nodes-diagnostic-hubs-fullcontent\" class=\"fragment fullcontent \"><h1>Diagnostic hubs</h1><div class=\"p\">Those responsible for planning diagnostic service support to primary care (for example, clinical commissioning groups) should consider establishing asthma diagnostic hubs to achieve economies of scale and improve the practicality of implementing the recommendations in this flowchart.</div><div id=\"paths-asthma-overview-nodes-diagnostic-hubs-fullcontent-sourceguidancereferences\" class=\"fragment sourceguidancereference \"><h1>Sources</h1><div class=\"p\">The NICE guidance that was used to create this part of the interactive flowchart. </div><div class=\"p\"><a rel=\"/rels/view-fragment/source-guidance\" href=\"#source-guidance-ng80\" class=\"fragment source-guidance\"><span>NG80</span></a></div></div></div>\n"
+                },
+                "geometry": {
+                   "_width": "176",
+                   "_height": "25",
+                   "_left": "421",
+                   "_top": "72"
+                },
+                "_id": "nodes-diagnostic-hubs",
+                "_type": "context",
+                "_nodeorder": "6"
+             },
+             {
+                "title": {
+                   "__cdata": "\nPatient experience in adult NHS services\n"
+                },
+                "shortcontent": {
+                   "__cdata": "\n<div id=\"paths-asthma-overview-nodes-patient-experience-in-adult-nhs-services-shortcontent\" class=\"fragment shortcontent \"><div class=\"p\">See what NICE says on ensuring adults have the best experience of NHS services</div></div>\n"
+                },
+                "link": [
+                   {
+                      "_rel": "/rels/view-path",
+                      "_uri": "/pathways/patient-experience-in-adult-nhs-services",
+                      "_title": "Patient experience in adult NHS services",
+                      "_type": "text/html"
+                   },
+                   {
+                      "_rel": "/rels/view-path",
+                      "_uri": "/pathways/patient-experience-in-adult-nhs-services.xml",
+                      "_title": "Patient experience in adult NHS services",
+                      "_shorturi": "/pathways/patient-experience-in-adult-nhs-services.xml",
+                      "_type": "application/vnd.nice.path+xml"
+                   }
+                ],
+                "geometry": {
+                   "_width": "176",
+                   "_height": "84",
+                   "_left": "631",
+                   "_top": "72"
+                },
+                "_id": "nodes-patient-experience-in-adult-nhs-services",
+                "_type": "offmapreference",
+                "_nodeorder": "7"
+             }
+          ]
+       },
+       "_title": "Asthma overview"
+    }
+ }
