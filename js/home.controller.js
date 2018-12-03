@@ -1,5 +1,5 @@
 var app = angular.module('fyp',[]);
-app.controller('homeCtrl',['$scope','$filter',function(scope,filter){
+app.controller('homeCtrl',['$scope','$filter','smart-table',function(scope,filter){
     scope.conditions =[
     'Acute coronary syndromes',
     'Acute coronary syndromes, hyperglycaemia',
