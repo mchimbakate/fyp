@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<body>
+<svg width="960" height="720"></svg>
+<script src="./d3/d3.v3.js"></script>
+<script src="./lib/flowcharty.js"></script>
+<script>
+  var data = {
+    nodes: [
+    {id: 'condition',label: {name: 'Person with suspected condition'}, style: {fillColor: '#fff'}},
+    {id: 'optionA', label: {name: 'This is an example of an option \nfor someone with suspected\ncondition.', color: '#fff', dx: 0, dy: 5, textAnchor: 'middle'}, style: {shape: "rect", width: 230, height: 50, rx: 3, ry: 3, fillColor: '#706CAA', strokeColor: '#7152aa'}},
+    {id: 'optionB', label: {name: 'This is another example of an option \nfor someone with suspected\ncondition.', color: '#fff', dx: 0, dy: 5, textAnchor: 'middle'}, style: {shape: "rect", width: 230, height: 50, rx: 3, ry: 3, fillColor: '#706CAA', strokeColor: '#7152aa'}},
+    {id: 'diagA',label: {name: 'Diagnosis and Assessment'}, style: {fillColor: '#fff'}},
+    {id: 'diagB',label: {name: 'Diagnosis and Assessment'}, style: {fillColor: '#fff'}},
+    {id: 'overview', label: {name: 'See an overview of the condition.', color: '#fff', dx: 0, dy: 5, textAnchor: 'middle'}, style: {shape: "rect", width: 230, height: 50, rx: 3, ry: 3, fillColor: '#706CAA', strokeColor: '#7152aa'}},
+    {id: 'treatA',label: {name: 'Treatment and Managment'}, style: {fillColor: '#fff'}},
+    {id: 'treatB',label: {name: 'Treatment and Managment'}, style: {fillColor: '#fff'}},
+
+    ],
+
+    map: [
+      ['', 'condition'],
+      ['', 'optionA','optionB','overview'],
+      ['', 'diagA','diagB'],
+      ['','treatA','treatB'],
+  ],
+    links: [
+      {source: 'condition', target: 'optionA'},
+      {source: 'condition', target: 'optionB'},
+      {source: 'condition', target: 'overview'},
+      {source: 'optionA', target: 'diagA'},
+      {source: 'optionB', target: 'diagB'},
+      {source: 'diagA', target: 'treatA'},
+      {source: 'diagB', target: 'treatB'},
+
+    ]
+  };
+
+  var flowcharty = new Flowcharty.default();
+  flowcharty.nodeRX = 7;
+  flowcharty.nodeRY = 7;
+  flowcharty.nodeFillColor = "#000";
+  flowcharty.render(d3.select("svg"), data);
+</script>
+</body>
+</html>
