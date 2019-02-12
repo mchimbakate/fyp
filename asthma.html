@@ -1,108 +1,30 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <head>
+        <script src="getxml.js"></script>
+    <script src="getorgchart/getorgchart.js"></script>
+    <link href="getorgchart/getorgchart.css" rel="stylesheet" />
 
-  </head>
-<meta charset="utf-8">
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"> <img class="logo" src="" height="40"> LOGO</a>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html"> Home </a></li>
-            <li class="nav-item"><a class="nav-link" href=""> Pathways </a></li>
-            <li class="nav-item"><a class="nav-link" href=""> About </a></li>
-            <li class="nav-item"><a class="nav-link" href=""> Contact </a></li>
-          </ul>
-          <div class="col-sm-3 col-md-3">
-            <form class="navbar-form" role="search">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search" name="q">
-                <div class="input-group-btn">
-                    <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
-                </div>
-            </div>
-            </form>
-        </div>
-      </nav>
-  <center><h1>Asthma</h1></center>
-<svg width="1000" height="1000"></svg>
-<script src="./d3/d3.v3.js"></script>
-<script src="./lib/flowcharty.js"></script>
-<script src="/js/pathway.controller.js"></script>
-<script>
-  var data = {
-    nodes: [
-    {id: 'condition',label: {name: 'Person with suspected asthma'}, style: {fillColor: '#fff'}},
-    {id: 'optionA', label: {name: 'Assessment and diagnosis in person under 17', color: 'black', dx: 0, dy: 5, textAnchor: 'middle'}, style: {shape: "rect", width: 230, height: 50, rx: 3, ry: 3, fillColor: ' #fff', strokeColor: '#7152aa'}},
-    {id: 'optionB', label: {name: 'Assessment and diagnosis in \nperson aged 17 or over', color: 'black', dx: 0, dy: 5, textAnchor: 'middle'}, style: {shape: "rect", width: 230, height: 50, rx: 3, ry: 3, fillColor: ' #fff', strokeColor: '#7152aa'}},
-    {id: 'optionC', label: {name: 'Diagnostic hubs', color: 'black', dx: 0, dy: 5, textAnchor: 'middle'}, style: {shape: "rect", width: 230, height: 50, rx: 3, ry: 3, fillColor: ' #fff', strokeColor: '#7152aa'}},
-    {id: 'overview', label: {name: 'See the best way of \nensuring adults have the best experience\n using this service.', color: 'black', dx: 0, dy: 5, textAnchor: 'middle'}, style: {shape: "rect", width: 230, height: 50, rx: 3, ry: 3, fillColor: ' #fff', strokeColor: '#7152aa'}},
-    {id: 'treatA', label: {name: 'Management', color: 'black', dx: 0, dy: 5, textAnchor: 'middle'}, style: {shape: "rect", width: 230, height: 50, rx: 3, ry: 3, fillColor: ' #fff', strokeColor: '#7152aa'}},
-    {id: 'treatB', label: {name: 'Monitor and review', color: 'black', dx: 0, dy: 5, textAnchor: 'middle'}, style: {shape: "rect", width: 230, height: 50, rx: 3, ry: 3, fillColor: '#fff', strokeColor: '#7152aa'}},
-    ],
-
-    map: [
-      ['', 'condition'],
-      ['', 'optionA','optionB','optionC','overview'],
-      ['','treatA'],
-      ['','treatB'],
-  ],
-    links: [
-      {source: 'condition', target: 'optionA'},
-      {source: 'condition', target: 'optionB'},
-      {source: 'condition', target: 'optionC'},
-      {source: 'condition', target: 'overview'},
-      {source: 'optionA', target: 'treatA'},
-      {source: 'optionB', target: 'treatA'},
-      {source: 'treatA', target: 'treatB'},
-
-
-    ]
-  };
-
-  var flowcharty = new Flowcharty.default();
-  flowcharty.nodeRX = 7;
-  flowcharty.nodeRY = 7;
-  flowcharty.nodeFillColor = "#000";
-  flowcharty.render(d3.select("svg"), data);
-</script>
-</body>
+    </head>
+<body onload="getXML()">
+        <div id = "conditions"></div>
+        <div style="float: right; width: 10%; height:100%; text-align:center; display: none;" ></div>
+<table id="orgChartData" >
+    <tr>
+        <th>title</th>
+        </tr>
+        <tr>
+            <!-- <script type="text/javascript">
+                var conditionsElement = document.getElementById("conditions");
+                var orgChart = new getOrgChart(conditionsElement, {
+                    theme: "deborah",                
+                    linkType: "B",
+                    primaryFields:  "title",
+                    enableGridView: true,
+                    dataSource: document.getElementById("orgChartData")
+                });
+    
+        </script> -->
+        </body>
 </html>
-
-
-
-
-
-
-
-
-
-<!-- THIS RETURNS NO RESULTS -->
-<!-- <!DOCTYPE html>
-<html>
-<body>
-
-<p id="demo"></p>
-
-<script>
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        myFunction(this);
-    }
-};
-xhttp.open("GET", "/asthma.xml", true);
-xhttp.send();
-
-function myFunction(xml) {
-    var xmlDoc = xml.responseXML;
-    document.getElementById("demo").innerHTML =
-    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
-}
-</script>
-
-</body>
-</html> -->
-<!-- END -->
